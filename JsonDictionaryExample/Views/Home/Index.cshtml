@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>@ViewBag.Message</h2>
+<p>
+    <button id="submit" >Click me to submit a dictionary via JSON</button>
+</p>
+<script type="text/javascript">
+    $("#submit").click(function () {
+        var model = {
+            Stats: {
+                "France": 65027000,
+                "UK": 62300000,
+                "Netherlands": 16715489
+            }
+        };
+        $.ajax({
+            type: "POST",
+            url: "/home/submit",
+            context: document.body,
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(model),
+            dataType: "json",
+            success: function (msg) {
+                if (msg) {
+                    var dictionary = msg.Dictionary;
+                    $("#target").html("<h3>JSON dictionary returned:</h3>");
+                    $("#target").append($('<ul id="list"></ul>'));
+                    for (var key in dictionary) {
+                        $("#list").append($("<li></li>").html(key + ": " + dictionary[key]));
+                    }
+                }
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                var msg = $.toJSON(xhr.responseText);
+                if (msg != null) {
+                    alert(msg);
+                }
+            }
+        });
+    });
+</script>
+<div id="target"></div>

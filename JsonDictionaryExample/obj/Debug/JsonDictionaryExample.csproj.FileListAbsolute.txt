@@ -1,0 +1,10 @@
+E:\Development\MvcApplication1\MvcApplication1\obj\Debug\ResolveAssemblyReference.cache
+E:\Development\MvcApplication1\MvcApplication1\bin\JsonDictionaryExample.dll
+E:\Development\MvcApplication1\MvcApplication1\bin\JsonDictionaryExample.pdb
+E:\Development\MvcApplication1\MvcApplication1\obj\Debug\JsonDictionaryExample.dll
+E:\Development\MvcApplication1\MvcApplication1\obj\Debug\JsonDictionaryExample.pdb
+E:\Development\JsonDictionaryExample\JsonDictionaryExample\bin\JsonDictionaryExample.dll
+E:\Development\JsonDictionaryExample\JsonDictionaryExample\bin\JsonDictionaryExample.pdb
+E:\Development\JsonDictionaryExample\JsonDictionaryExample\obj\Debug\ResolveAssemblyReference.cache
+E:\Development\JsonDictionaryExample\JsonDictionaryExample\obj\Debug\JsonDictionaryExample.dll
+E:\Development\JsonDictionaryExample\JsonDictionaryExample\obj\Debug\JsonDictionaryExample.pdb
